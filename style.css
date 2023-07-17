@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro+Titling&family=Cedarville+Cursive&family=Zeyada&display=swap');
+
+* {
+    font-family: 'Varela', sans-serif;
+    color: #000000;
+}
+
+body {
+    background: #ffffff;
+}
+
+
+#wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 1px solid #ffffff; */
+    /* max-width: 340px; */
+
+}
+
+h1 {
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-family: 'Bruno Ace SC', cursive; */
+    /* font-family: 'Castoro Titling', cursive; */
+    /* font-family: 'Cedarville Cursive', cursive; */
+    font-family: 'Zeyada', cursive;
+}
+
+.title {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(85, 85, 85);
+    padding-left: 6.4px;
+}
+
+.input-fld {
+    height: 1.7rem;
+    width: 19rem;
+    margin-bottom: 0.7rem;
+    border-radius: 0.3rem;
+    border: none;
+    background: rgba(128, 128, 128, 0.171);
+    padding: 0.4rem;
+    font-size: 11px;
+    font-weight: 600;
+    outline: none;
+}
+
+.input-fld:focus {
+    border-bottom: 1.7px solid #000000;
+    border-radius: 0%;
+    transition-property: border;
+    transition-delay: 0.2s;
+}
+
+
+.fpword {
+    font-size: 11px;
+    margin: 0;
+    position: absolute;
+    left: 64%;
+    font-weight: 600;
+}
+
+.btn {
+    height: 2.5rem;
+    width: 20rem;
+    border-radius: 0.3rem;
+    border: 1px solid snow;
+    background: rgba(128, 128, 128, 0.144);
+    padding: 0.4rem;
+    font-size: 11px;  
+    margin-top: 1.4rem;
+    background: rgb(0, 0, 0);
+    /* background: rgba(255, 255, 255, 0.575); */
+    color: #ffffff;
+}
+
+.btn:focus {
+    background: #ffffff;
+    border: 1px solid #000;
+    color: #000;
+    transition: 0.1;
+    border-radius: 0%;
+    font-weight: 700;
+}
+
+.new-u {
+    font-size: 12px;
+    margin-top: 1.5rem;
+    position: absolute;
+    left: 19%;
+    color: grey;
+    
+}
+
+.inner-new-u{
+    font-weight: 700;
+    color: #000000;
+}
