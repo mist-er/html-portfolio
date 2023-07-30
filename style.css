@@ -60,7 +60,7 @@ h1 {
 .fpword {
     font-size: 11px;
     margin: 0;
-    position: absolute;
+    diplay: in-line-flex( 
     left: 64%;
     font-weight: 600;
 }
