@@ -18,11 +18,11 @@ body {
 }
 .grid-wrapper {
     display: grid;
-/*     border: 2px solid rgb(255, 6, 6); */
+    /* border: 2px solid rgb(255, 6, 6); */
     grid-template: 100px 80px auto / 100%;
 }
 .track {
-/*     border: 1px solid #c60bff; */
+    /* border: 1px solid #c60bff; */
 }
 
 .track > h1, .track > p, .popular, .price, .months {
