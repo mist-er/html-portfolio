@@ -1,15 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 
-
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap');
-  
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
-
-
-  * {
+* {
     font-family: 'Roboto', sans-serif; 
-    /* font-family: 'Ubuntu', sans-serif; */
 }
 
 body {
@@ -27,17 +21,6 @@ body {
     /* border: 2px solid rgb(255, 6, 6); */
     grid-template: 100px 80px auto / 100%;
 }
-
-/* .nav {
-    display: flex;
-    align-items: center;
-}
-li {
-    flex: 1;
-    list-style: none;
-    text-align: center;
-    border: 1px dashed red;
-} */
 .track {
     /* border: 1px solid #c60bff; */
     text-align: center;
@@ -101,13 +84,13 @@ button {
     font-family: 'Ubuntu', sans-serif;
 }
 .btn {
-    margin-top: 80px;
+    margin-top: 70px;
     color: #fff;
     background-color: #2196f3;
 }
 .btn-1 {
     color: #fff;
-    margin-top: 37px;
+    margin-top: 20px;
    background-color: #339d5d;
 }
 
@@ -144,4 +127,13 @@ button {
     h1 {
         font-size: 25px;
     }
+
+ @media(min-width: 300px) {
+        .track > h1 {
+            font-size: 19px;
+        }
+        .track > p {
+            font-size: 11px;
+        }
+}
 }
