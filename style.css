@@ -1,103 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Varela&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro+Titling&family=Cedarville+Cursive&family=Zeyada&display=swap');
 
-* {
-    font-family: 'Varela', sans-serif;
-    color: #000000;
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+  * {
+    font-family: 'Roboto', sans-serif; 
+    /* font-family: 'Ubuntu', sans-serif; */
 }
 
 body {
-    background: #ffffff;
-}
-
-
-#wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    /* border: 1px solid #ffffff; */
-    /* max-width: 340px; */
+    background-color: #eff2f9;
 
 }
 
-h1 {
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    /* font-family: 'Bruno Ace SC', cursive; */
-    /* font-family: 'Castoro Titling', cursive; */
-    /* font-family: 'Cedarville Cursive', cursive; */
-    font-family: 'Zeyada', cursive;
+.flex-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-wrapper {
+    display: grid;
+    /* border: 2px solid rgb(255, 6, 6); */
+    grid-template: 100px 80px auto / 100%;
 }
 
-.title {
-    font-size: 12px;
+/* .nav {
+    display: flex;
+    align-items: center;
+}
+li {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    border: 1px dashed red;
+} */
+.track {
+    /* border: 1px solid #c60bff; */
+    text-align: center;
+}
+
+.inner-flex {
+    display: flex;
+    gap: 20px;
+}
+.item {
+    height: 450px;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.track > h1 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.track > p {
+    color: #64646480;
+    font-size: 16px;
     font-weight: 600;
-    color: rgb(85, 85, 85);
-    padding-left: 6.4px;
 }
 
-.input-fld {
-    height: 1.7rem;
-    width: 19rem;
-    margin-bottom: 0.7rem;
-    border-radius: 0.3rem;
+.price {
+    margin: 25px 0 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.tag {
+    margin-top: 42px;
+}
+
+.popular {
+    font-size: 11.5px;
+    padding: 3px; 
+    margin-top: 0;
+    width: 100px;
+    border-radius: 0 0 3px 3px;
+    color:#339d5d;
+    background-color: rgba(34, 139, 34, 0.103);
+    position: relative;
+    left: 90px;
+    font-family: 'Poppins', sans-serif;
+}
+
+ .months {
+    color: #64646480;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+button {
+    height: 45px;
+    width: 230px;
     border: none;
-    background: rgba(128, 128, 128, 0.171);
-    padding: 0.4rem;
-    font-size: 11px;
-    font-weight: 600;
-    outline: none;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
 }
-
-.input-fld:focus {
-    border-bottom: 1.7px solid #000000;
-    border-radius: 0%;
-    transition-property: border;
-    transition-delay: 0.2s;
-}
-
-
-.fpword {
-    font-size: 11px;
-    margin: 0;
-    diplay: in-line-flex( 
-    left: 64%;
-    font-weight: 600;
-}
-
 .btn {
-    height: 2.5rem;
-    width: 20rem;
-    border-radius: 0.3rem;
-    border: 1px solid snow;
-    background: rgba(128, 128, 128, 0.144);
-    padding: 0.4rem;
-    font-size: 11px;  
-    margin-top: 1.4rem;
-    background: rgb(0, 0, 0);
-    /* background: rgba(255, 255, 255, 0.575); */
-    color: #ffffff;
+    margin-top: 80px;
+    color: #fff;
+    background-color: #2196f3;
+}
+.btn-1 {
+    color: #fff;
+    margin-top: 37px;
+   background-color: #339d5d;
 }
 
-.btn:focus {
-    background: #ffffff;
-    border: 1px solid #000;
-    color: #000;
-    transition: 0.1;
-    border-radius: 0%;
-    font-weight: 700;
+.icon {
+    color: #339d5d;
 }
 
-.new-u {
-    font-size: 12px;
-    margin-top: 1.5rem;
-    position: absolute;
-    left: 19%;
-    color: grey;
-    
+.inner-flex > * {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+/* NOTE NOTE NOTE */
+ .item > p {
+    font-size: 13px;
+    margin: 13px;
 }
 
-.inner-new-u{
-    font-weight: 700;
-    color: #000000;
+@media(max-width: 1000px) {
+    .track > h1 {
+        font-size: 25px;
+    }
+    .track > p {
+        font-size: 14px;
+    }
+
+    .inner-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }  
+}
+@media(max-width: 600px) {
+    h1 {
+        font-size: 25px;
+    }
 }
