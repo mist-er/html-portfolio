@@ -18,12 +18,19 @@ body {
 }
 .grid-wrapper {
     display: grid;
-    /* border: 2px solid rgb(255, 6, 6); */
+    border: 2px solid rgb(255, 6, 6);
     grid-template: 100px 80px auto / 100%;
 }
 .track {
-    /* border: 1px solid #c60bff; */
+    border: 1px solid #c60bff;
+}
+
+.track > h1, .track > p, .popular, .price, .months {
     text-align: center;
+}
+
+.months ~ p {
+    padding-left: 30px;
 }
 
 .inner-flex {
@@ -31,8 +38,8 @@ body {
     gap: 20px;
 }
 .item {
-    height: 450px;
-    width: 280px;
+    height: 475px;
+    width: 300px;
     background-color: #fff;
     border-radius: 5px;
 }
@@ -42,13 +49,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 .track > p {
-    color: #64646480;
-    font-size: 16px;
+    color: #646464b2;
+    font-size: 15px;
     font-weight: 600;
 }
 
 .price {
-    margin: 25px 0 10px 0;
+    margin: 20px 0 10px 0;
     font-family: 'Poppins', sans-serif;
 }
 .tag {
@@ -64,14 +71,15 @@ body {
     color:#339d5d;
     background-color: rgba(34, 139, 34, 0.103);
     position: relative;
-    left: 90px;
+    left: 100px;
     font-family: 'Poppins', sans-serif;
 }
 
  .months {
-    color: #64646480;
+    color: #646464b2;
     font-size: 10px;
     font-weight: 700;
+    padding-bottom: 15px;
 }
 
 
@@ -81,31 +89,41 @@ button {
     border: none;
     border-radius: 3px;
     font-size: 15px;
+    margin-left: 35px;
     font-family: 'Ubuntu', sans-serif;
 }
 .btn {
-    margin-top: 70px;
+    margin-top: 78px;
     color: #fff;
     background-color: #2196f3;
 }
 .btn-1 {
     color: #fff;
-    margin-top: 20px;
-   background-color: #339d5d;
+    margin-top: 34px;
+    background-color: #339d5d;
 }
 
 .icon {
     color: #339d5d;
+    position: relative;
+    right: 10px;
 }
 
 .inner-flex > * {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 600;
 }
-/* NOTE NOTE NOTE */
+
  .item > p {
     font-size: 13px;
     margin: 13px;
+}
+
+.icon-2 {
+    font-size: 14px;
+    position: relative;
+    top: -9px;
+    right: 4px;
 }
 
 @media(max-width: 1000px) {
